@@ -24,7 +24,7 @@
         <activity
             android:name=".home.view.NuHomeActivity"
             android:exported="true"
-            android:theme="@style/Theme.NuHome.NoActionBar">
+            android:theme="@style/Theme.NuHome">
         </activity>
 
     </application>
