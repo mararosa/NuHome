@@ -3,7 +3,7 @@ package com.estudos.nuhome.home.data.model.response
 import com.squareup.moshi.Json
 
 data class NuHomeResponse(
-    @Json(name = "userName") val name: String? = null,
-    @Json(name = "creditCardBrand") val creditCardBrand: String? = null,
-    @Json(name = "availableBalance") val availableBalance: String? = null
+    @Json(name = "user_name") val name: String? = null,
+    @Json(name = "credit_card_brand") val creditCardType: String? = null,
+    @Json(name = "available_balance") val availableBalance: String? = null
 )
