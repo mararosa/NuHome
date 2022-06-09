@@ -9,10 +9,12 @@ import com.estudos.nuhome.home.domain.NuHomeInteractorImpl
 class NuHomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityNuHomeBinding
-    private val interactor = NuHomeInteractorImpl(this.resources)
+    private var interactor = NuHomeInteractorImpl()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        interactor = NuHomeInteractorImpl(this.resources)
 
         binding = ActivityNuHomeBinding.inflate(layoutInflater)
         val view = binding.root
@@ -23,8 +25,8 @@ class NuHomeActivity : AppCompatActivity() {
 
     private fun setupView() {
         val values = interactor.fetchUserCreditCardInfo()
-        binding.brandIcon.setImageResource(values.creditCardIcon)
-        binding.userName.text = values.userName
-        binding.balanceAvailableValue.text = values.totalAmoutAvailable
+        values?.let { binding.brandIcon.setImageResource(it.creditCardIcon) }
+        binding.userName.text = values?.userName
+        binding.balanceAvailableValue.text = values?.totalAmoutAvailable
     }
 }

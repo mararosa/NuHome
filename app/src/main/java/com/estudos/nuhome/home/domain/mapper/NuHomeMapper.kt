@@ -2,14 +2,17 @@ package com.estudos.nuhome.home.domain.mapper
 
 import android.content.res.Resources
 import com.estudos.nuhome.R
-import com.estudos.nuhome.home.data.model.response.NuHomeResponse
+import com.estudos.nuhome.home.data.model.response.CredicardCardUserDetails
 import com.estudos.nuhome.home.domain.CreditCardBrand
 import com.estudos.nuhome.home.domain.NuHomeVO
 
-fun NuHomeResponse.toVO(resources: Resources) =
+fun CredicardCardUserDetails.toVO(resources: Resources) =
     NuHomeVO(
         userName = this.name.orEmpty(),
-        totalAmoutAvailable = resources.getString(R.string.nu_home_amount_available, this.availableBalance), //pq aqui nao relcamou do nullo
+        totalAmoutAvailable = resources.getString(
+            R.string.nu_home_amount_available,
+            this.availableBalance
+        ), //pq aqui nao relcamou do nullo
         creditCardBrand = CreditCardBrand.getEnumValue(this.creditCardType.orEmpty()),
         creditCardIcon = setBrandIcon(this.creditCardType.orEmpty())
     )

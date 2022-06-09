@@ -11,7 +11,6 @@ enum class CreditCardBrand(val type: String? = null) {
     companion object {
         fun getEnumValue(brand: String) =
             values().find { it.type?.equals(brand, ignoreCase = true) == true } ?: UNKNOWN
-
     }
     // TENHO DUAS OPCOES, COLOCAR UM PARAMETRO NO ENUM OU TER IFS PRA VALIDAR STAUS POR STATUS
     //PQ eu usei o find e o equals? p find ja nao deveria achar o que quero? e pq nao consegui usar o map?
