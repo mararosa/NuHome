@@ -12,13 +12,13 @@ interface NuHomeInteractor {
     fun fetchUserCreditCardInfo(): NuHomeVO?
 }
 
-class NuHomeInteractorImpl(val resources: Resources? = null) : NuHomeInteractor {
+class NuHomeInteractorImpl() : NuHomeInteractor {
 
     //Preciso usar moshi pq meu "json"eh uma string e ai preciso transformar em objeto
     //retrofit faz por debaixo dos panos
     //moshi.adapter(BaseValidation::class.java) eh meu objeto
 
-    val json: String = "{\n    \"user_name\": \"The Rock\",\n    \"credit_card_brand\": \"Mastercard\",\n    \"available_balance\": \"589.052,54\"\n}"
+    val json: String = "{\n    \"user_name\": \"Mara\",\n    \"credit_card_brand\": \"mastercard\",\n    \"available_balance\": 589200.47\n}"
     val moshi: Moshi = Moshi.Builder()
         .add(KotlinJsonAdapterFactory())
         .build()
@@ -26,7 +26,6 @@ class NuHomeInteractorImpl(val resources: Resources? = null) : NuHomeInteractor 
     val jsonAdapter: JsonAdapter<CredicardCardUserDetails> = moshi.adapter<CredicardCardUserDetails>()
     val userDetails = jsonAdapter.fromJson(json)
 
-    override fun fetchUserCreditCardInfo(): NuHomeVO? {
-        return resources?.let { userDetails?.toVO(it) }
-    }
+    override fun fetchUserCreditCardInfo(): NuHomeVO? =
+        userDetails?.toVO() //NAo me lembro de alguma vez ter esperado um retorno nullable
 }

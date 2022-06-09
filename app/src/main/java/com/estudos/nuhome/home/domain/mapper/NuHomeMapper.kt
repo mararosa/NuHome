@@ -1,32 +1,28 @@
 package com.estudos.nuhome.home.domain.mapper
 
-import android.content.res.Resources
 import com.estudos.nuhome.R
 import com.estudos.nuhome.home.data.model.response.CredicardCardUserDetails
 import com.estudos.nuhome.home.domain.CreditCardBrand
 import com.estudos.nuhome.home.domain.NuHomeVO
+import extension.formatForBrazilianCurrency
 
-fun CredicardCardUserDetails.toVO(resources: Resources) =
+fun CredicardCardUserDetails.toVO() =
     NuHomeVO(
         userName = this.name.orEmpty(),
-        totalAmoutAvailable = resources.getString(
-            R.string.nu_home_amount_available,
-            this.availableBalance
-        ), //pq aqui nao relcamou do nullo
-        creditCardBrand = CreditCardBrand.getEnumValue(this.creditCardType.orEmpty()),
-        creditCardIcon = setBrandIcon(this.creditCardType.orEmpty())
+        totalAmoutAvailable = this.availableBalance.formatForBrazilianCurrency(),
+        creditCardIcon = CreditCardBrand.getEnumValue(this.creditCardType.orEmpty())
+            .toSetBrandIcon(),
     )
 
-fun setBrandIcon(creditCardBrand: String): Int { //QUERIA TER COLOCADO O ENUM :/ MAS FAZ DIFERENCA?
-    return when (creditCardBrand) {
-        "Mastercard" -> R.drawable.icon_card_mastercard
-        "Visa" -> R.drawable.icon_card_visa
-        "Elo" -> R.drawable.icon_card_elo
-        "Hipercard" -> R.drawable.icon_card_hipercard
-        "AmericanExpress" -> R.drawable.icon_card_americanexpress
+fun CreditCardBrand.toSetBrandIcon() =
+    when (this) {
+        CreditCardBrand.MASTERCARD -> R.drawable.icon_card_mastercard
+        CreditCardBrand.VISA -> R.drawable.icon_card_visa
+        CreditCardBrand.ELO -> R.drawable.icon_card_elo
+        CreditCardBrand.HIPERCARD -> R.drawable.icon_card_hipercard
+        CreditCardBrand.AMERICAN_EXPRESS -> R.drawable.icon_card_americanexpress
         else -> R.drawable.icon_card_unknown
     }
-}
 
 
 

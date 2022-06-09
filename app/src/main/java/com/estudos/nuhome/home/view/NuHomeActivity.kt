@@ -14,8 +14,6 @@ class NuHomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        interactor = NuHomeInteractorImpl(this.resources)
-
         binding = ActivityNuHomeBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)

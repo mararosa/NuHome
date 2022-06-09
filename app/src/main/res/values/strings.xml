@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">NuHome</string>
-    <string name="nu_home_amount_available">R$ %s</string>
+    <string name="nu_home_amount_available">R$ %f</string>
 </resources>
