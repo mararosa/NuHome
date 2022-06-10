@@ -1,6 +1,8 @@
 package com.estudos.nuhome.home.view
 
+import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.estudos.nuhome.R
@@ -26,6 +28,7 @@ class NuHomeActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         fecthHomeCardDetails()
+        setupClickListeners()
     }
 
 
@@ -35,6 +38,12 @@ class NuHomeActivity : AppCompatActivity() {
         }
         binding.userName.text = vo?.userName
         binding.balanceAvailableValue.text = vo?.totalAmoutAvailable
+    }
+
+    private fun setupClickListeners() {
+        binding.buttonSettings.setOnClickListener {
+            startActivity(Intent(Settings.ACTION_SETTINGS))
+        }
     }
 
     private fun fecthHomeCardDetails() {
