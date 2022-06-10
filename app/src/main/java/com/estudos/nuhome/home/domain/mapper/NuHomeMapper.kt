@@ -1,12 +1,12 @@
 package com.estudos.nuhome.home.domain.mapper
 
 import com.estudos.nuhome.R
-import com.estudos.nuhome.home.data.model.response.CredicardCardUserDetails
+import com.estudos.nuhome.home.data.model.response.HomeUserDetailsResponse
 import com.estudos.nuhome.home.domain.CreditCardBrand
 import com.estudos.nuhome.home.domain.NuHomeVO
 import extension.formatForBrazilianCurrency
 
-fun CredicardCardUserDetails.toVO() =
+fun HomeUserDetailsResponse.toVO() =
     NuHomeVO(
         userName = this.name.orEmpty(),
         totalAmoutAvailable = this.availableBalance.formatForBrazilianCurrency(),
