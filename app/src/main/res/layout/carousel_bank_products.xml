@@ -36,7 +36,7 @@
                         android:layout_marginStart="@dimen/space16"
                         android:layout_marginTop="@dimen/space16"
                         android:layout_weight="1"
-                        android:src="@drawable/icon_nu_pix" />
+                        android:src="@drawable/ic_nu_money" />
 
                     <TextView
                         android:id="@+id/tv_item_pix_description"
@@ -142,7 +142,7 @@
                         android:layout_marginStart="@dimen/space16"
                         android:layout_marginTop="@dimen/space16"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_nu_money" />
+                        android:src="@drawable/ic_product_faq" />
 
                     <TextView
                         android:id="@+id/tv_item_etc_description"

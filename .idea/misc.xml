@@ -5,9 +5,10 @@
       <map>
         <entry key="app/src/main/res/drawable/bg_rectangle_purple.xml" value="0.234" />
         <entry key="app/src/main/res/drawable/bg_splash.xml" value="0.234" />
+        <entry key="app/src/main/res/drawable/icon_nu_pix.xml" value="0.123" />
         <entry key="app/src/main/res/drawable/splash_background.xml" value="0.234" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.36822916666666666" />
-        <entry key="app/src/main/res/layout/activity_nu_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_nu_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.36822916666666666" />
         <entry key="app/src/main/res/layout/carousel_bank_products.xml" value="0.33" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1045" />
