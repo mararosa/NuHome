@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">NuHome</string>
     <string name="nu_home_amount_available">R$ %f</string>
+    <string name="carousel_product_pix">Fazer um Pix</string>
+    <string name="carousel_product_boleto">Pagar um boleto</string>
+    <string name="carousel_product_deposito">Fazer um depósito</string>
+    <string name="carousel_product_faq">FAQ</string>
+    <string name="home_card_value_title">Saldo Disponível</string>
+    <string name="home_question_description">Do que precisa?</string>
 </resources>

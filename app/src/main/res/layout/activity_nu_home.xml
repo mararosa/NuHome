@@ -17,7 +17,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/space16"
                 android:src="@drawable/image_home_top_transparent"
                 app:layout_constraintBottom_toTopOf="@+id/containerCardViewTop"
                 app:layout_constraintStart_toStartOf="@id/containerCardViewTop" />
@@ -26,8 +26,8 @@
                 android:id="@+id/button_settings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="48dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="@dimen/space48"
+                android:layout_marginBottom="@dimen/space32"
                 android:background="@drawable/icon_home_gear_ellipse"
                 app:layout_constraintBottom_toTopOf="@+id/containerCardViewTop"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -37,9 +37,9 @@
                 android:id="@+id/containerCardViewTop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="160dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginStart="@dimen/space32"
+                android:layout_marginTop="@dimen/space160"
+                android:layout_marginEnd="@dimen/space32"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/nu_card_purple"
-                    app:cardCornerRadius="16dp">
+                    app:cardCornerRadius="@dimen/space16">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/containerCardTopInfo"
@@ -59,10 +59,10 @@
 
                         <ImageView
                             android:id="@+id/brandIcon"
-                            android:layout_width="60dp"
+                            android:layout_width="@dimen/icon_card_brand_width"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="24dp"
-                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="@dimen/space24"
+                            android:layout_marginEnd="@dimen/space16"
                             android:adjustViewBounds="true"
                             app:layout_constraintEnd_toEndOf="@id/containerCardTopInfo"
                             app:layout_constraintTop_toTopOf="@id/containerCardTopInfo"
@@ -70,14 +70,13 @@
 
                         <TextView
                             android:id="@+id/userName"
+                            style="@style/CardHomeText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="140dp"
-                            android:layout_marginBottom="16dp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
+                            android:layout_marginStart="@dimen/space16"
+                            android:layout_marginTop="@dimen/space140"
+                            android:layout_marginBottom="@dimen/space16"
+                            android:textSize="@dimen/font_size_24"
                             app:layout_constraintBottom_toBottomOf="@id/containerCardTopInfo"
                             app:layout_constraintStart_toStartOf="@id/containerCardTopInfo"
                             app:layout_constraintTop_toTopOf="@id/containerCardTopInfo"
@@ -90,9 +89,9 @@
                 android:id="@+id/containerCardViewMiddle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginStart="@dimen/space32"
+                android:layout_marginTop="@dimen/space16"
+                android:layout_marginEnd="@dimen/space32"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="@id/containerCardViewTop"
                 app:layout_constraintStart_toStartOf="@id/containerCardViewTop"
@@ -102,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/nu_card_purple"
-                    app:cardCornerRadius="16dp">
+                    app:cardCornerRadius="@dimen/space16">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/containerCardMiddleInfo"
@@ -113,34 +112,32 @@
                             android:id="@+id/icon_wallet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="24dp"
-                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="@dimen/space24"
+                            android:layout_marginEnd="@dimen/space16"
                             android:src="@drawable/icon_nu_wallet"
                             app:layout_constraintEnd_toEndOf="@id/containerCardMiddleInfo"
                             app:layout_constraintTop_toTopOf="@id/containerCardMiddleInfo" />
 
                         <TextView
                             android:id="@+id/balanceAvailableLabel"
+                            style="@style/CardHomeText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="24dp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:text="Saldo Disponível"
-                            android:textColor="@color/white"
-                            android:textSize="14sp"
+                            android:layout_marginStart="@dimen/space16"
+                            android:layout_marginTop="@dimen/space24"
+                            android:text="@string/home_card_value_title"
+                            android:textSize="@dimen/font_size_14"
                             app:layout_constraintStart_toStartOf="@id/containerCardMiddleInfo"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
                             android:id="@+id/balanceAvailableValue"
+                            style="@style/CardHomeText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:textColor="@color/white"
-                            android:textSize="36sp"
+                            android:layout_marginTop="@dimen/space16"
+                            android:layout_marginBottom="@dimen/space16"
+                            android:textSize="@dimen/font_size36"
                             app:layout_constraintBottom_toBottomOf="@id/containerCardMiddleInfo"
                             app:layout_constraintStart_toStartOf="@id/balanceAvailableLabel"
                             app:layout_constraintTop_toBottomOf="@id/balanceAvailableLabel"
@@ -152,26 +149,24 @@
 
             <TextView
                 android:id="@+id/tv_description_question"
+                style="@style/CardHomeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="48dp"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Do que precisa?"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:layout_marginStart="@dimen/space48"
+                android:layout_marginTop="@dimen/space32"
+                android:text="@string/home_question_description"
+                android:textSize="@dimen/font_size_14"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/containerCardViewMiddle" />
 
             <include
                 layout="@layout/carousel_bank_products"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginStart="@dimen/space30"
+                android:layout_marginTop="@dimen/space36"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_description_question" />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

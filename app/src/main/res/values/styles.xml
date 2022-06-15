@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CardHomeText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="CaroulselText" parent="CardHomeText">
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+</resources>

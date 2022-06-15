@@ -17,11 +17,11 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="95dp"
-                android:layout_height="120dp"
-                android:layout_marginEnd="8dp"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_marginEnd="@dimen/space8"
                 app:cardBackgroundColor="@color/nu_card_purple"
-                app:cardCornerRadius="21dp">
+                app:cardCornerRadius="@dimen/cardview_radius">
 
                 <LinearLayout
                     android:id="@+id/containerPix"
@@ -32,32 +32,32 @@
                     <ImageView
                         android:id="@+id/item_pix_icon"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/space16"
+                        android:layout_marginTop="@dimen/space16"
+                        android:layout_weight="1"
                         android:src="@drawable/icon_nu_pix" />
 
                     <TextView
                         android:id="@+id/tv_item_pix_description"
+                        style="@style/CaroulselText"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
                         android:layout_gravity="center|bottom"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginTop="30dp"
-                        android:text="Fazer um Pix"
-                        android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:layout_marginTop="@dimen/space30"
+                        android:layout_marginBottom="@dimen/space16"
+                        android:layout_weight="1"
+                        android:text="@string/carousel_product_pix" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="95dp"
-                android:layout_height="120dp"
-                android:layout_marginEnd="8dp"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_marginEnd="@dimen/space8"
                 app:cardBackgroundColor="@color/nu_card_purple"
-                app:cardCornerRadius="21dp">
+                app:cardCornerRadius="@dimen/cardview_radius">
 
                 <LinearLayout
                     android:id="@+id/containerBoleto"
@@ -68,32 +68,31 @@
                     <ImageView
                         android:id="@+id/item_boleto_icon"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/space16"
+                        android:layout_marginTop="@dimen/space16"
+                        android:layout_weight="1"
                         android:src="@drawable/icon_nu_boleto" />
 
                     <TextView
                         android:id="@+id/tv_item_boleto_description"
+                        style="@style/CaroulselText"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
                         android:layout_gravity="center|bottom"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="16dp"
-                        android:text="Pagar um
-boleto"
-                        android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:layout_marginTop="@dimen/space30"
+                        android:layout_marginBottom="@dimen/space16"
+                        android:layout_weight="1"
+                        android:text="@string/carousel_product_boleto" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="95dp"
-                android:layout_height="120dp"
-                android:layout_marginEnd="8dp"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_marginEnd="@dimen/space8"
                 app:cardBackgroundColor="@color/nu_card_purple"
-                app:cardCornerRadius="21dp">
+                app:cardCornerRadius="@dimen/cardview_radius">
 
                 <LinearLayout
                     android:id="@+id/containerDeposito"
@@ -104,31 +103,31 @@ boleto"
                     <ImageView
                         android:id="@+id/item_deposito_icon"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/space16"
+                        android:layout_marginTop="@dimen/space16"
+                        android:layout_weight="1"
                         android:src="@drawable/icon_nu_transfer" />
 
                     <TextView
                         android:id="@+id/tv_item_deposito_description"
+                        style="@style/CaroulselText"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
                         android:layout_gravity="center|bottom"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginTop="30dp"
-                        android:text="Fazer um depósito"
-                        android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:layout_marginTop="@dimen/space30"
+                        android:layout_marginBottom="@dimen/space16"
+                        android:layout_weight="1"
+                        android:text="@string/carousel_product_deposito" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="95dp"
-                android:layout_height="120dp"
-                android:layout_marginEnd="8dp"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_marginEnd="@dimen/space8"
                 app:cardBackgroundColor="@color/nu_card_purple"
-                app:cardCornerRadius="21dp">
+                app:cardCornerRadius="@dimen/cardview_radius">
 
                 <LinearLayout
                     android:id="@+id/containerEtc"
@@ -139,22 +138,22 @@ boleto"
                     <ImageView
                         android:id="@+id/item_etc_icon"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/space16"
+                        android:layout_marginTop="@dimen/space16"
+                        android:layout_weight="1"
                         android:src="@drawable/ic_nu_money" />
 
                     <TextView
                         android:id="@+id/tv_item_etc_description"
+                        style="@style/CaroulselText"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
                         android:layout_gravity="center|bottom"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="16dp"
-                        android:text="FAQ"
-                        android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:layout_marginTop="@dimen/space30"
+                        android:layout_marginBottom="@dimen/space16"
+                        android:layout_weight="1"
+                        android:text="@string/carousel_product_faq" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

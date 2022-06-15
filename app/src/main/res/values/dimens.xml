@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space16">16dp</dimen>
+    <dimen name="space48">48dp</dimen>
+    <dimen name="space32">32dp</dimen>
+    <dimen name="space160">160dp</dimen>
+    <dimen name="icon_card_brand_width">60dp</dimen>
+    <dimen name="space24">24dp</dimen>
+    <dimen name="space140">140dp</dimen>
+    <dimen name="space30">30dp</dimen>
+    <dimen name="space36">36dp</dimen>
+    <dimen name="cardview_width">95dp</dimen>
+    <dimen name="cardview_height">120dp</dimen>
+    <dimen name="space8">8dp</dimen>
+    <dimen name="cardview_radius">21dp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size36">36sp</dimen>
+</resources>
