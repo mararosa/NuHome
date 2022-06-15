@@ -2,13 +2,13 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/container"
@@ -17,11 +17,11 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="75dp"
-                android:layout_height="95dp"
+                android:layout_width="95dp"
+                android:layout_height="120dp"
                 android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="@color/nu_card_purple"
-                app:cardCornerRadius="16dp">
+                app:cardCornerRadius="21dp">
 
                 <LinearLayout
                     android:id="@+id/containerPix"
@@ -35,26 +35,29 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/icon_nu_arrow" />
+                        android:src="@drawable/icon_nu_pix" />
 
                     <TextView
                         android:id="@+id/tv_item_pix_description"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|bottom"
                         android:layout_marginBottom="16dp"
+                        android:layout_marginTop="30dp"
                         android:text="Fazer um Pix"
                         android:textColor="@color/white"
-                        android:textSize="8sp" />
+                        android:textSize="12sp" />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="75dp"
-                android:layout_height="95dp"
+                android:layout_width="95dp"
+                android:layout_height="120dp"
                 android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="@color/nu_card_purple"
-                app:cardCornerRadius="16dp">
+                app:cardCornerRadius="21dp">
 
                 <LinearLayout
                     android:id="@+id/containerBoleto"
@@ -68,26 +71,29 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/icon_nu_arrow" />
+                        android:src="@drawable/icon_nu_boleto" />
 
                     <TextView
                         android:id="@+id/tv_item_boleto_description"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginTop="30dp"
                         android:layout_marginBottom="16dp"
-                        android:text="Fazer um Pix"
+                        android:text="Pagar um
+boleto"
                         android:textColor="@color/white"
-                        android:textSize="8sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="75dp"
-                android:layout_height="95dp"
+                android:layout_width="95dp"
+                android:layout_height="120dp"
                 android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="@color/nu_card_purple"
-                app:cardCornerRadius="16dp">
+                app:cardCornerRadius="21dp">
 
                 <LinearLayout
                     android:id="@+id/containerDeposito"
@@ -101,26 +107,28 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/icon_nu_arrow" />
+                        android:src="@drawable/icon_nu_transfer" />
 
                     <TextView
                         android:id="@+id/tv_item_deposito_description"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|bottom"
                         android:layout_marginBottom="16dp"
-                        android:text="Fazer um Pix"
+                        android:layout_marginTop="30dp"
+                        android:text="Fazer um depósito"
                         android:textColor="@color/white"
-                        android:textSize="8sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="75dp"
-                android:layout_height="95dp"
+                android:layout_width="95dp"
+                android:layout_height="120dp"
                 android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="@color/nu_card_purple"
-                app:cardCornerRadius="16dp">
+                app:cardCornerRadius="21dp">
 
                 <LinearLayout
                     android:id="@+id/containerEtc"
@@ -134,17 +142,19 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/icon_nu_arrow" />
+                        android:src="@drawable/ic_nu_money" />
 
                     <TextView
                         android:id="@+id/tv_item_etc_description"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginTop="30dp"
                         android:layout_marginBottom="16dp"
-                        android:text="Fazer um Pix"
+                        android:text="FAQ"
                         android:textColor="@color/white"
-                        android:textSize="8sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
