@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="CardHomeText" parent="TextAppearance.AppCompat">
+    <style name="CardHomeText">
         <item name="android:textColor">@color/white</item>
         <item name="fontFamily">@font/poppins_bold</item>
     </style>
