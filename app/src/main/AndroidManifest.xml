@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NuHome">
+        android:theme="@style/Theme.NuHome.NoActionBar">
 
         <activity android:name=".splash.view.NuSplashActivity"
             android:exported="true"
@@ -24,7 +24,7 @@
         <activity
             android:name=".home.view.NuHomeActivity"
             android:exported="true"
-            android:theme="@style/Theme.NuHome">
+            android:theme="@style/Theme.NuHome.NoActionBar">
         </activity>
 
     </application>
