@@ -36,7 +36,7 @@
 
             <LinearLayout
                 android:id="@+id/containerCardViewTop"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/space32"
                 android:layout_marginTop="@dimen/space160"
@@ -88,14 +88,14 @@
 
             <LinearLayout
                 android:id="@+id/containerCardViewMiddle"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/space32"
                 android:layout_marginTop="@dimen/space16"
                 android:layout_marginEnd="@dimen/space32"
                 android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="@id/containerCardViewTop"
-                app:layout_constraintStart_toStartOf="@id/containerCardViewTop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/containerCardViewTop">
 
                 <androidx.cardview.widget.CardView
@@ -151,7 +151,7 @@
             <TextView
                 android:id="@+id/tv_description_question"
                 style="@style/CardHomeText"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/space48"
                 android:layout_marginTop="@dimen/space32"
@@ -162,7 +162,7 @@
 
             <include
                 layout="@layout/carousel_bank_products"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/space30"
                 android:layout_marginTop="@dimen/space36"
