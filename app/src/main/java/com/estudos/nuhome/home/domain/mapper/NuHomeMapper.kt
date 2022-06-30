@@ -1,8 +1,8 @@
 package com.estudos.nuhome.home.domain.mapper
 
 import com.estudos.nuhome.R
-import com.estudos.nuhome.home.data.model.response.HomeUserDetailsResponse
-import com.estudos.nuhome.home.domain.CreditCardBrand
+import com.estudos.nuhome.service.response.HomeUserDetailsResponse
+import com.estudos.nuhome.home.data.model.CreditCardBrand
 import com.estudos.nuhome.home.domain.NuHomeVO
 import extension.formatForBrazilianCurrency
 

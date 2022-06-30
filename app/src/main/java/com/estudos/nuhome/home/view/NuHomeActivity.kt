@@ -1,3 +1,9 @@
+/*
+ * Copyright 2017 Google, Inc.
+ *
+ * ...
+ */
+
 package com.estudos.nuhome.home.view
 
 import android.content.Intent
@@ -5,14 +11,13 @@ import android.os.Bundle
 import android.provider.Settings
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.estudos.nuhome.R
+import androidx.lifecycle.ViewModelProviders
 import com.estudos.nuhome.databinding.ActivityNuHomeBinding
-import com.estudos.nuhome.home.data.NuHomeRepositoryImpl
-import com.estudos.nuhome.home.data.model.response.HomeUserDetailsResponse
-import com.estudos.nuhome.home.domain.NuHomeInteractorImpl
 import com.estudos.nuhome.home.domain.NuHomeVO
 import com.estudos.nuhome.home.domain.mapper.toVO
+import com.estudos.nuhome.home.viewmodel.NuHomeViewModel
 import com.estudos.nuhome.service.ServiceImpl
+import com.estudos.nuhome.service.response.HomeUserDetailsResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -24,10 +29,13 @@ class NuHomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val viewModel = ViewModelProviders.of(this).get(NuHomeViewModel::class.java)
+
         binding = ActivityNuHomeBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
-        fecthHomeCardDetails()
+        binding.viewmodel
+        binding.lifecycleOwner
+
+        setContentView(binding.root)
         setupClickListeners()
     }
 
@@ -44,24 +52,5 @@ class NuHomeActivity : AppCompatActivity() {
         binding.buttonSettings.setOnClickListener {
             startActivity(Intent(Settings.ACTION_SETTINGS))
         }
-    }
-
-    private fun fecthHomeCardDetails() {
-        val callback = ServiceImpl.createService().fetchHomeCards()
-        callback.enqueue(object : Callback<HomeUserDetailsResponse> {
-            override fun onResponse(
-                call: Call<HomeUserDetailsResponse>,
-                response: Response<HomeUserDetailsResponse>
-            ) {
-                val vo = response.body()?.toVO()
-                setupView(vo)
-            }
-
-            override fun onFailure(call: Call<HomeUserDetailsResponse>, t: Throwable) {
-                Toast.makeText(this@NuHomeActivity, "Error", Toast.LENGTH_SHORT).show()
-            }
-
-        })
-
     }
 }

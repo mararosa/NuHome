@@ -1,13 +1,11 @@
 package com.estudos.nuhome.service
 
-import com.estudos.nuhome.home.data.model.response.HomeUserDetailsResponse
+import com.estudos.nuhome.service.response.HomeUserDetailsResponse
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import io.reactivex.Single
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 

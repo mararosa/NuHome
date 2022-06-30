@@ -1,4 +1,4 @@
-package com.estudos.nuhome.home.data.model.response
+package com.estudos.nuhome.service.response
 
 import com.squareup.moshi.Json
 
