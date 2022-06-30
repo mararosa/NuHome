@@ -13,9 +13,12 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.estudos.nuhome.databinding.ActivityNuHomeBinding
+import com.estudos.nuhome.home.domain.NuHomeInteractor
+import com.estudos.nuhome.home.domain.NuHomeInteractorImpl
 import com.estudos.nuhome.home.domain.NuHomeVO
 import com.estudos.nuhome.home.domain.mapper.toVO
 import com.estudos.nuhome.home.viewmodel.NuHomeViewModel
+import com.estudos.nuhome.home.viewmodel.NuHomeViewModelFactory
 import com.estudos.nuhome.service.ServiceImpl
 import com.estudos.nuhome.service.response.HomeUserDetailsResponse
 import retrofit2.Call
@@ -29,24 +32,26 @@ class NuHomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val viewModel = ViewModelProviders.of(this).get(NuHomeViewModel::class.java)
+        val viewModelFactory = NuHomeViewModelFactory(interactor = NuHomeInteractorImpl())
+        val viewModel = ViewModelProviders.of(this, viewModelFactory).get(NuHomeViewModel::class.java)
 
         binding = ActivityNuHomeBinding.inflate(layoutInflater)
-        binding.viewmodel
-        binding.lifecycleOwner
+        binding.viewmodel = viewModel
+        binding.lifecycleOwner = this
 
         setContentView(binding.root)
         setupClickListeners()
+        viewModel.loadInfo()
     }
 
 
-    private fun setupView(vo: NuHomeVO?) {
-        vo?.let {
-            binding.brandIcon.setImageResource(it.creditCardIcon)
-        }
-        binding.userName.text = vo?.userName
-        binding.balanceAvailableValue.text = vo?.totalAmoutAvailable
-    }
+//    private fun setupView(vo: NuHomeVO?) {
+//        vo?.let {
+//            binding.brandIcon.setImageResource(it.creditCardIcon)
+//        }
+//        binding.userName.text = vo?.userName
+//        binding.balanceAvailableValue.text = vo?.totalAmoutAvailable
+//    }
 
     private fun setupClickListeners() {
         binding.buttonSettings.setOnClickListener {

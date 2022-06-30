@@ -2,6 +2,7 @@ package com.estudos.nuhome.home.viewmodel
 
 import android.util.Log
 import android.widget.Toast
+import androidx.databinding.BindingAdapter
 import androidx.lifecycle.ViewModel
 import com.estudos.nuhome.R
 import com.estudos.nuhome.home.domain.NuHomeInteractor
@@ -12,7 +13,6 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-//qual e a diferenca dessa minha viewmodel pra de base de cards que tem o onCreate?
 class NuHomeViewModel(
     private val interactor: NuHomeInteractor
 ) : ViewModel() {
@@ -22,7 +22,8 @@ class NuHomeViewModel(
         creditCardIcon = R.drawable.icon_card_unknown
     )
 
-    fun loadInf() {
+    //Add live data para a tela ouvir a info que chega da request
+    fun loadInfo() {
         val callback = interactor.fetchHomeCards()
         callback.enqueue(object : Callback<HomeUserDetailsResponse> {
             override fun onResponse(
