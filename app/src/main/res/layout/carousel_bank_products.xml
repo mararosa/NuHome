@@ -19,7 +19,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="@dimen/cardview_width"
                 android:layout_height="@dimen/cardview_height"
-                android:layout_marginEnd="@dimen/space8"
+                android:layout_marginEnd="@dimen/spacing8"
                 app:cardBackgroundColor="@color/nu_card_purple"
                 app:cardCornerRadius="@dimen/cardview_radius">
 
@@ -33,8 +33,8 @@
                         android:id="@+id/item_pix_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_marginStart="@dimen/space16"
-                        android:layout_marginTop="@dimen/space16"
+                        android:layout_marginStart="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing16"
                         android:layout_weight="1"
                         android:src="@drawable/ic_nu_money" />
 
@@ -43,10 +43,10 @@
                         style="@style/CaroulselText"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:paddingStart="@dimen/space16"
-                        android:paddingEnd="@dimen/space16"
-                        android:layout_marginTop="@dimen/space24"
-                        android:layout_marginBottom="@dimen/space16"
+                        android:paddingStart="@dimen/spacing16"
+                        android:paddingEnd="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing24"
+                        android:layout_marginBottom="@dimen/spacing16"
                         android:layout_weight="1"
                         android:text="@string/carousel_product_pix" />
 
@@ -56,7 +56,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="@dimen/cardview_width"
                 android:layout_height="@dimen/cardview_height"
-                android:layout_marginEnd="@dimen/space8"
+                android:layout_marginEnd="@dimen/spacing8"
                 app:cardBackgroundColor="@color/nu_card_purple"
                 app:cardCornerRadius="@dimen/cardview_radius">
 
@@ -70,8 +70,8 @@
                         android:id="@+id/item_boleto_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_marginStart="@dimen/space16"
-                        android:layout_marginTop="@dimen/space16"
+                        android:layout_marginStart="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing16"
                         android:layout_weight="1"
                         android:src="@drawable/icon_nu_boleto" />
 
@@ -80,10 +80,10 @@
                         style="@style/CaroulselText"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_marginTop="@dimen/space24"
-                        android:layout_marginBottom="@dimen/space16"
-                        android:paddingStart="@dimen/space16"
-                        android:paddingEnd="@dimen/space16"
+                        android:layout_marginTop="@dimen/spacing24"
+                        android:layout_marginBottom="@dimen/spacing16"
+                        android:paddingStart="@dimen/spacing16"
+                        android:paddingEnd="@dimen/spacing16"
                         android:layout_weight="1"
                         android:text="@string/carousel_product_boleto" />
                 </LinearLayout>
@@ -92,7 +92,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="@dimen/cardview_width"
                 android:layout_height="@dimen/cardview_height"
-                android:layout_marginEnd="@dimen/space8"
+                android:layout_marginEnd="@dimen/spacing8"
                 app:cardBackgroundColor="@color/nu_card_purple"
                 app:cardCornerRadius="@dimen/cardview_radius">
 
@@ -106,8 +106,8 @@
                         android:id="@+id/item_deposito_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_marginStart="@dimen/space16"
-                        android:layout_marginTop="@dimen/space16"
+                        android:layout_marginStart="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing16"
                         android:layout_weight="1"
                         android:src="@drawable/icon_nu_transfer" />
 
@@ -116,10 +116,10 @@
                         style="@style/CaroulselText"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_marginTop="@dimen/space24"
-                        android:layout_marginBottom="@dimen/space16"
-                        android:paddingStart="@dimen/space16"
-                        android:paddingEnd="@dimen/space16"
+                        android:layout_marginTop="@dimen/spacing24"
+                        android:layout_marginBottom="@dimen/spacing16"
+                        android:paddingStart="@dimen/spacing16"
+                        android:paddingEnd="@dimen/spacing16"
                         android:layout_weight="1"
                         android:text="@string/carousel_product_deposito" />
                 </LinearLayout>
@@ -128,7 +128,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="@dimen/cardview_width"
                 android:layout_height="@dimen/cardview_height"
-                android:layout_marginEnd="@dimen/space8"
+                android:layout_marginEnd="@dimen/spacing8"
                 app:cardBackgroundColor="@color/nu_card_purple"
                 app:cardCornerRadius="@dimen/cardview_radius">
 
@@ -142,8 +142,8 @@
                         android:id="@+id/item_etc_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_marginStart="@dimen/space16"
-                        android:layout_marginTop="@dimen/space16"
+                        android:layout_marginStart="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing16"
                         android:layout_weight="1"
                         android:src="@drawable/ic_product_faq" />
 
@@ -152,10 +152,10 @@
                         style="@style/CaroulselText"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
-                        android:layout_marginTop="@dimen/space24"
-                        android:layout_marginBottom="@dimen/space16"
-                        android:paddingStart="@dimen/space16"
-                        android:paddingEnd="@dimen/space16"
+                        android:layout_marginTop="@dimen/spacing24"
+                        android:layout_marginBottom="@dimen/spacing16"
+                        android:paddingStart="@dimen/spacing16"
+                        android:paddingEnd="@dimen/spacing16"
                         android:layout_weight="1"
                         android:text="@string/carousel_product_faq" />
                 </LinearLayout>
