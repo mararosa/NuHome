@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_marginEnd="@dimen/spacing8"
+                app:cardBackgroundColor="@color/nu_card_purple"
+                app:cardCornerRadius="@dimen/cardview_radius">
+
+                <LinearLayout
+                    android:id="@+id/containerPix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/item_pix_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing16"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_nu_money" />
+
+                    <TextView
+                        android:id="@+id/tv_item_pix_description"
+                        style="@style/CaroulselText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:paddingStart="@dimen/spacing16"
+                        android:paddingEnd="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing24"
+                        android:layout_marginBottom="@dimen/spacing16"
+                        android:layout_weight="1"
+                        android:text="@string/carousel_product_pix" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_marginEnd="@dimen/spacing8"
+                app:cardBackgroundColor="@color/nu_card_purple"
+                app:cardCornerRadius="@dimen/cardview_radius">
+
+                <LinearLayout
+                    android:id="@+id/containerBoleto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/item_boleto_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing16"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_nu_boleto" />
+
+                    <TextView
+                        android:id="@+id/tv_item_boleto_description"
+                        style="@style/CaroulselText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/spacing24"
+                        android:layout_marginBottom="@dimen/spacing16"
+                        android:paddingStart="@dimen/spacing16"
+                        android:paddingEnd="@dimen/spacing16"
+                        android:layout_weight="1"
+                        android:text="@string/carousel_product_boleto" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_marginEnd="@dimen/spacing8"
+                app:cardBackgroundColor="@color/nu_card_purple"
+                app:cardCornerRadius="@dimen/cardview_radius">
+
+                <LinearLayout
+                    android:id="@+id/containerDeposito"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/item_deposito_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing16"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_nu_transfer" />
+
+                    <TextView
+                        android:id="@+id/tv_item_deposito_description"
+                        style="@style/CaroulselText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/spacing24"
+                        android:layout_marginBottom="@dimen/spacing16"
+                        android:paddingStart="@dimen/spacing16"
+                        android:paddingEnd="@dimen/spacing16"
+                        android:layout_weight="1"
+                        android:text="@string/carousel_product_deposito" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_marginEnd="@dimen/spacing8"
+                app:cardBackgroundColor="@color/nu_card_purple"
+                app:cardCornerRadius="@dimen/cardview_radius">
+
+                <LinearLayout
+                    android:id="@+id/containerEtc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/item_etc_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/spacing16"
+                        android:layout_marginTop="@dimen/spacing16"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_product_faq" />
+
+                    <TextView
+                        android:id="@+id/tv_item_etc_description"
+                        style="@style/CaroulselText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/spacing24"
+                        android:layout_marginBottom="@dimen/spacing16"
+                        android:paddingStart="@dimen/spacing16"
+                        android:paddingEnd="@dimen/spacing16"
+                        android:layout_weight="1"
+                        android:text="@string/carousel_product_faq" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
